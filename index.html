@@ -14,6 +14,7 @@
 <body>
 
     <h1>This is a Heading</h1>
+    <div class="boton">Boton</div>
     <p>This is a paragraph.</p>
     <p>This is a paragraph.</p>
     <p>This is a paragraph.</p>
@@ -54,9 +55,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
 $( document ).ready(function() {
-    $( "html, body" ).addClass( "scrollnoscroll" ); 
+    
+    $( "html, body" ).addClass( "scrollnoscroll" );
+    
+    $( ".boton" ).click(function() {
+        $( "html, body" ).toggleClass( "scrollnoscroll" );
+    });
+    
 });
 </script>
 </body>
 </html>
-
